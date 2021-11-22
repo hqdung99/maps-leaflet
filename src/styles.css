@@ -1,0 +1,102 @@
+* {
+  box-sizing: border-box;
+}
+
+.resizable {
+  position: absolute;
+  border: 2px solid #533535;
+  width: 100px;
+  height: 100px;
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 15px;
+  min-height: 15px;
+}
+.resizer {
+  /* All resizers are positioned absolutely inside the element */
+  position: absolute;
+  background: black;
+}
+
+/* Placed at the right side */
+.resizer-r {
+  cursor: col-resize;
+  height: 100%;
+  right: 0;
+  top: 0;
+  width: 5px;
+}
+
+/* Placed at the bottom side */
+.resizer-b {
+  bottom: 0;
+  cursor: row-resize;
+  height: 5px;
+  left: 0;
+  width: 100%;
+}
+
+.resizer-l {
+  bottom: 0;
+  cursor: col-resize;
+  height: 100%;
+  left: 0;
+  width: 5px;
+}
+
+.resizer-t {
+  top: 0;
+  cursor: row-resize;
+  height: 5px;
+  left: 0;
+  width: 100%;
+}
+/* ---------------- */
+.resizer-angle {
+  position: absolute;
+  background: #EED7CE;
+  width: 5px;
+  height: 5px;
+}
+
+/* Placed at the right side */
+.resizer-lt {
+  cursor: nw-resize;
+  left: 0;
+  top: 0;
+}
+
+/* Placed at the bottom side */
+.resizer-tr {
+  top: 0;
+  cursor: ne-resize;
+  right: 0;
+}
+
+.resizer-rb {
+  bottom: 0;
+  cursor: se-resize;
+  right: 0;
+}
+
+.resizer-bl {
+  bottom: 0;
+  cursor: sw-resize;
+  left: 0;
+}
+
+.children {
+  width: 100%;
+  height: 100%;
+  background: burlywood;
+  border-radius: 50%;
+}
+
+.dragger {
+  /* background: cadetblue; */
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
